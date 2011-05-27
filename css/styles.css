@@ -1,0 +1,91 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+body {
+}
+
+.container {
+	background-image: url(../img/alpha_texture.png);
+	padding-top: 10px;
+}
+.container .row .eightcol.last #nav li {
+	display: inline;
+	list-style-type: none;
+}
+.container .row .eightcol.last #nav {
+	float: right;
+}
+.container .row .eightcol.last #nav li {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#content {
+	margin-top: 40px;
+	background-image: url(../img/alpha_texture.png);
+	margin-bottom: 40px;
+}
+#content .eightcol h1, h2, h3, h4, h5, h6, p {
+	padding: 20px;
+}
+#content .fourcol.last h1, h2, h3, h4, h5, h6, p {
+	padding: 20px;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+	#content .eightcol {
+	border-right-width: thin;
+	border-right-style: dotted;
+	border-right-color: #999999;
+}
+
+.container .row #nav a {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+
+	}
+	
+	#content .eightcol {
+		border: none;
+	}
+	
+	.container .row .eightcol.last #nav li {
+		/*display:block;
+		padding-left:8em;*/
+	}
+	
+	.container .row .eightcol.last {
+		float:left;
+	}
+	
+	
+}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
